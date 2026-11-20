@@ -9,7 +9,9 @@
   <meta property="og:title" content="Firmino Imóveis | Piranhas, Alagoas">
   <meta property="og:description" content="Imóveis em destinos turísticos. Fale com Humberto Firmino, CRECI-AL 10379.">
   <meta property="og:type" content="website">
-  <!-- EDITAR: adicionar canonical, og:url e og:image absolutos na publicação. -->
+  <meta property="og:url" content="https://dev-felipefvs.github.io/site-firmino-imoveis/">
+  <meta property="og:image" content="https://dev-felipefvs.github.io/site-firmino-imoveis/assets/rio.webp">
+  <link rel="canonical" href="https://dev-felipefvs.github.io/site-firmino-imoveis/">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preload" href="assets/manrope.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
@@ -32,15 +34,23 @@
 
   <main id="conteudo">
     <section class="hero shell" aria-labelledby="titulo">
-      <div class="hero-scene">
-        <img class="hero-photo" src="assets/rio.webp" srcset="assets/rio-mobile.webp 900w, assets/rio.webp 1760w" sizes="93vw" width="1760" height="990" alt="Vista aérea do Centro Histórico de Piranhas, com o casario e o Rio São Francisco" fetchpriority="high">
-        <span class="photo-caption"><span class="location-dot" aria-hidden="true"></span> Centro Histórico · Piranhas, AL</span>
-      </div>
+      <div class="hero-scene" aria-hidden="true"></div>
       <div class="hero-panel">
-        <h1 id="titulo">Seu próximo endereço no São&nbsp;Francisco.</h1>
-        <p>Imóveis para morar ou investir em Piranhas e nos destinos turísticos da região, com Humberto Firmino.</p>
-        <a class="button button-lime" href="#imoveis">Explorar imóveis</a>
+        <h1 id="titulo">Seu próximo imóvel em Piranhas e no São Francisco.</h1>
+        <p>Encontre opções para morar ou investir com a orientação de Humberto Firmino.</p>
+        <div class="hero-actions">
+          <a class="button button-lime" href="https://wa.me/5582987416312" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="button button-outline" href="#imoveis">Ver imóveis</a>
+        </div>
       </div>
+      <figure class="hero-agent">
+        <img src="assets/humberto.jpg" alt="Retrato de Humberto Firmino" width="150" height="150" fetchpriority="high">
+        <figcaption>
+          <strong>Humberto Firmino</strong>
+          <span>Corretor de imóveis</span>
+          <span>CRECI-AL 10379</span>
+        </figcaption>
+      </figure>
     </section>
 
     <section class="inventory wrap" id="imoveis" aria-labelledby="titulo-imoveis">
